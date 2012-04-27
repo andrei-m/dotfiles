@@ -1,9 +1,14 @@
+" ----------------------------------------------------------------------------
+"  File Handling
+" ----------------------------------------------------------------------------
+set backupdir=/mnt/raid/tmp/.vim-tmp,~/.vim-tmp,/var/tmp,/tmp
+set directory=/mnt/raid/tmp/.vim-tmp,~/.vim-tmp,/var/tmp,/tmp
 set noswapfile
 
 " ----------------------------------------------------------------------------
 "  Text Formatting
 " ----------------------------------------------------------------------------
-
+set enc=utf-8
 set autoindent             " automatic indent new lines
 set smartindent            " be smart about it
 inoremap # X<BS>#
@@ -13,8 +18,6 @@ set shiftwidth=2           " ..
 set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " fuck tabs
-set formatoptions+=n       " support for numbered/bullet lists
-"set textwidth=80           " wrap at 80 chars by default
 set virtualedit=block      " allow virtual edit in visual block ..
 
 " ----------------------------------------------------------------------------
@@ -61,6 +64,7 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 
+so ~/vim_config/rainbow_neon.vim
 
 " ----------------------------------------------------------------------------
 " Visual Cues
@@ -74,7 +78,6 @@ set ignorecase             " ignore case when searching
 set nohlsearch             " don't highlight searches
 set visualbell             " shut the fuck up
 
-
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
 " ---------------------------------------------------------------------------
@@ -83,3 +86,4 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
+
