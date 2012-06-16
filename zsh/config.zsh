@@ -6,6 +6,7 @@ fi
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+export GREP_OPTIONS='--color=auto'
 
 fpath=($ZSH/zsh/functions $fpath)
 
