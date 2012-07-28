@@ -24,6 +24,8 @@ set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " fuck tabs
 set virtualedit=block      " allow virtual edit in visual block ..
+filetype plugin indent on
+syntax on
 
 " ----------------------------------------------------------------------------
 "  Remapping
