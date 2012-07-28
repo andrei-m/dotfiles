@@ -1,8 +1,8 @@
 " ----------------------------------------------------------------------------
 "  File Handling
 " ----------------------------------------------------------------------------
-set backupdir=/mnt/raid/tmp/.vim-tmp,~/.vim-tmp,/var/tmp,/tmp
-set directory=/mnt/raid/tmp/.vim-tmp,~/.vim-tmp,/var/tmp,/tmp
+set backupdir=/raid/tmp/.vim-tmp,~/.vim-tmp,/var/tmp,/tmp
+set directory=/raid/tmp/.vim-tmp,~/.vim-tmp,/var/tmp,/tmp
 set noswapfile
 
 " ----------------------------------------------------------------------------
@@ -64,7 +64,7 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 
-so ~/vim_config/rainbow_neon.vim
+so ~/.vim_config/rainbow_neon.vim
 
 " ----------------------------------------------------------------------------
 " Visual Cues
