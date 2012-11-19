@@ -71,7 +71,9 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 
-so ~/.vim_config/rainbow_neon.vim
+syntax enable
+set background=dark
+colorscheme solarized
 
 " ----------------------------------------------------------------------------
 " Visual Cues
