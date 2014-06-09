@@ -17,15 +17,12 @@ set enc=utf-8
 set autoindent             " automatic indent new lines
 set smartindent            " be smart about it
 inoremap # X<BS>#
-set nowrap                 " do not wrap lines
 set softtabstop=2          " yep, two
 set shiftwidth=2           " ..
 set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " fuck tabs
 set virtualedit=block      " allow virtual edit in visual block ..
-filetype plugin indent on
-syntax on
 
 " ----------------------------------------------------------------------------
 "  Remapping
@@ -71,9 +68,13 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 
+" ----------------------------------------------------------------------------
+"  Syntax
+" ----------------------------------------------------------------------------
+set runtimepath+=$GOROOT/misc/vim
 syntax enable
-" set background=dark
-" colorscheme solarized
+filetype plugin indent on
+syntax on
 
 " ----------------------------------------------------------------------------
 " Visual Cues
