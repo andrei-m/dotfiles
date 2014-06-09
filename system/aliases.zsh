@@ -8,3 +8,12 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+alias ls="ls -a"
+#
+# git aliases
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gd="git diff"
+
