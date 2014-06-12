@@ -88,6 +88,11 @@ set ignorecase             " ignore case when searching
 set nohlsearch             " don't highlight searches
 set visualbell             " shut the fuck up
 
+" ----------------------------------------------------------------------------
+" System
+" ----------------------------------------------------------------------------
+set shell=/bin/zsh
+
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
 " ---------------------------------------------------------------------------
