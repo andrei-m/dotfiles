@@ -71,7 +71,7 @@ set nostartofline          " don't jump to the start of line when scrolling
 " ----------------------------------------------------------------------------
 "  Syntax
 " ----------------------------------------------------------------------------
-set runtimepath+=$GOROOT/misc/vim
+set runtimepath+=/usr/local/Cellar/go/1.2.2/libexec/misc/vim
 syntax enable
 filetype plugin indent on
 syntax on
