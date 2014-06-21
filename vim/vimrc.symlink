@@ -38,7 +38,6 @@ let mapleader = ","
 " exit to normal mode with 'jj'
 inoremap jj <ESC>
 
-
 " reflow paragraph with Q in normal and visual mode
 nnoremap Q gqap
 vnoremap Q gq
@@ -73,8 +72,8 @@ set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 
 syntax enable
-set background=dark
-colorscheme solarized
+#set background=dark
+#colorscheme solarized
 
 " ----------------------------------------------------------------------------
 " Visual Cues
