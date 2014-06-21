@@ -60,7 +60,6 @@ ruby_version() {
 
 rb_prompt() {
   if ! [[ -z "$(ruby_version)" ]]
->>>>>>> holman/master
   then
     echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
   else
