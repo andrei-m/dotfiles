@@ -1,1 +1,1 @@
-export GOMAXPROCS=16
+export GOMAXPROCS=8
