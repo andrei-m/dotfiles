@@ -72,9 +72,12 @@ set nostartofline          " don't jump to the start of line when scrolling
 "  Syntax
 " ----------------------------------------------------------------------------
 set runtimepath+=/usr/local/Cellar/go/1.2.2/libexec/misc/vim
+set runtimepath+=/Users/andrei/dev/go-misc/vim-template-syntax
 syntax enable
 filetype plugin indent on
 syntax on
+" Enable syntax highlighting for go templates
+au BufNewFile,BufRead *.tmpl set filetype=gotpl
 
 " ----------------------------------------------------------------------------
 " Visual Cues
