@@ -78,6 +78,8 @@ filetype plugin indent on
 syntax on
 " Enable syntax highlighting for go templates
 au BufNewFile,BufRead *.tmpl set filetype=gotpl
+" Tab settings for Go
+au BufNewFile,BufRead *.go set softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 
 " ----------------------------------------------------------------------------
 " Visual Cues
