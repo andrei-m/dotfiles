@@ -7,3 +7,4 @@ atom.symlink/themes
 git/gitconfig.symlink
 vim/vim.symlink/autoload/gocomplete.vim
 vim/vim.symlink/ftplugin/
+vim/vim.symlink/bundle/
