@@ -2,7 +2,6 @@
 "  runtimepath management
 " ----------------------------------------------------------------------------
 call pathogen#infect()
-set runtimepath+=$GOROOT/misc/vim
 
 " ----------------------------------------------------------------------------
 "  File Handling
