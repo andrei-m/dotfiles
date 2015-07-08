@@ -89,6 +89,7 @@ au BufNewFile,BufRead *.go set softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 let g:syntastic_mode_map = { "mode": "active", "passive_filetpes": ["go"] }
 
 au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <Leader>d <Plug>(go-def)
 au FileType go nmap <Leader>dx <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
