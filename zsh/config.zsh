@@ -49,5 +49,3 @@ bindkey '^?' backward-delete-char
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
-
-EDITOR=vim
