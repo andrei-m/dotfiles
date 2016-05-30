@@ -55,6 +55,11 @@ inoremap <Up> <C-o>gk
 " <C-P> for fzf plugin
 noremap <C-P> :FZF<CR>
 
+" quickfix navigation
+noremap <Leader>e :cfir<CR>
+noremap <Leader>n :cn<CR>
+noremap <Leader>p :cp<CR>
+
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
@@ -93,9 +98,14 @@ au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>i <Plug>(go-info)
-"
+
 " Tab settings for Go
 au BufNewFile,BufRead *.go set softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
+" test on save
+au BufWritePost *.go :GoTest<CR>
+
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:go_list_type = "quickfix"
 
 " ----------------------------------------------------------------------------
 " Visual Cues
