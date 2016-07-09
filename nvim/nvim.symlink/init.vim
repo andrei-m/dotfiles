@@ -102,7 +102,7 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 " Tab settings for Go
 au BufNewFile,BufRead *.go set softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 " test on save
-au BufWritePost *.go :GoTest<CR>
+au BufWritePost *.go :GoTestCompile<CR>
 
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
