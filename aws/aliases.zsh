@@ -1,0 +1,1 @@
+alias sandboxes="aws ec2 describe-instances --filter Name=tag:Owner,Values=andrei-m | jq '.Reservations | .[] | .Instances | .[] | {\"id\": .InstanceId, \"name\": .Tags | .[] | select(.Key == \"Name\") | .Value, \"state\": .State.Name}'"
