@@ -8,7 +8,7 @@ git/gitconfig.symlink
 
 vim/vim.symlink/bundle
 vim/vim.symlink/.netrwhist
-vim/vim.symlink/autoload/gocomplete.vim
+vim/vim.symlink/autoload
 vim/vim.symlink/ftplugin/
 
 nvim/nvim.symlink/plugged
