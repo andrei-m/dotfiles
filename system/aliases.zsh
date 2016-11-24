@@ -10,6 +10,7 @@ then
 fi
 
 alias ls="ls -a"
+alias e="vim"
 
 # clypd alias
 alias mit="make integration-test"
