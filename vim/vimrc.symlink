@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------
 "  runtimepath management
 " ----------------------------------------------------------------------------
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf'
 Plug 'scrooloose/syntastic'
