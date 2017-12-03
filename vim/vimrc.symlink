@@ -139,5 +139,4 @@ set shell=/bin/zsh
 function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
-map <LEADER>s :call StripWhitespace ()<CR>
-
+map <Leader>s :call StripWhitespace ()<CR>
