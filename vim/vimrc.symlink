@@ -64,6 +64,9 @@ noremap <Leader>e :cfir<CR>
 noremap <Leader>n :cn<CR>
 noremap <Leader>p :cp<CR>
 
+:noremap <Leader>ev :e $MYVIMRC<cr>
+:noremap <Leader>sv :source $MYVIMRC<cr>
+
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
@@ -132,11 +135,8 @@ set visualbell             " shut the fuck up
 " ----------------------------------------------------------------------------
 set shell=/bin/zsh
 
-" ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
-" ---------------------------------------------------------------------------
-
 function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
-map <Leader>s :call StripWhitespace ()<CR>
+map <Leader>sw :call StripWhitespace ()<CR>
