@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf'
 Plug 'scrooloose/syntastic'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 " ----------------------------------------------------------------------------
@@ -117,6 +118,9 @@ au BufWritePost *.go :GoTestCompile<CR>
 " Disable Syntastic for Go
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
+
+" Auto-format Terraform files
+let g:terraform_fmt_on_save = 1
 
 " ----------------------------------------------------------------------------
 " Visual Cues
