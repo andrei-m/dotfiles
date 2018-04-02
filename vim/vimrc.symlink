@@ -68,6 +68,9 @@ noremap <Leader>p :cp<CR>
 :noremap <Leader>ev :e $MYVIMRC<cr>
 :noremap <Leader>sv :source $MYVIMRC<cr>
 
+:noremap <Leader>sp :set paste<cr>
+:noremap <Leader>np :set nopaste<cr>
+
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
