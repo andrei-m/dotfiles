@@ -54,6 +54,20 @@ vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
+" <C-P> for fzf plugin
+noremap <C-P> :FZF<CR>
+
+" quickfix navigation
+noremap <Leader>e :cfir<CR>
+noremap <Leader>n :cn<CR>
+noremap <Leader>p :cp<CR>
+
+:noremap <Leader>ev :e $MYVIMRC<cr>
+:noremap <Leader>sv :source $MYVIMRC<cr>
+
+:noremap <Leader>sp :set paste<cr>
+:noremap <Leader>np :set nopaste<cr>
+
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
@@ -83,6 +97,8 @@ au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <Leader>dx <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gi <Plug>(go-imports)
+au FileType go nmap <Leader>gm <Plug>(go-implements)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>i <Plug>(go-info)
 
@@ -103,12 +119,9 @@ set visualbell             " shut the fuck up
 " ----------------------------------------------------------------------------
 set shell=/bin/zsh
 
-" ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
-" ---------------------------------------------------------------------------
-
 function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
-map ,s :call StripWhitespace ()<CR>
 
+map <Leader>sw :call StripWhitespace ()<CR>
