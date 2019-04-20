@@ -71,6 +71,9 @@ noremap <Leader>p :cp<CR>
 :noremap <Leader>sp :set paste<cr>
 :noremap <Leader>np :set nopaste<cr>
 
+" omnicomplete
+inoremap <Leader>, <C-x><C-o>
+
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
@@ -113,6 +116,7 @@ au FileType go nmap <Leader>gi <Plug>(go-imports)
 au FileType go nmap <Leader>gm <Plug>(go-implements)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>gr <Plug>(go-referrers)
+au FileType go nmap <Leader>ge <Plug>(go-iferr)
 au FileType go nmap <Leader>i <Plug>(go-info)
 
 " Tab settings for Go
