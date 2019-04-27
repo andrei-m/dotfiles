@@ -3,7 +3,9 @@
 " ----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
+Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/syntastic'
 Plug 'hashivim/vim-terraform'
 call plug#end()
@@ -33,6 +35,14 @@ set virtualedit=block      " allow virtual edit in visual block ..
 inoremap <S-Tab> <C-V><Tab>
 
 " ----------------------------------------------------------------------------
+"  FZF
+" ----------------------------------------------------------------------------
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number '.shellescape(<q-args>), 0,
+  \   { 'dir': systemlist('git rev-parse --show-toplevel')[0] }, <bang>0)
+
+" ----------------------------------------------------------------------------
 "  Remapping
 " ----------------------------------------------------------------------------
 
@@ -57,8 +67,8 @@ vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
-" <C-P> for fzf plugin
 noremap <C-P> :FZF<CR>
+noremap <C-G> :GGrep<CR>
 
 " quickfix navigation
 noremap <Leader>e :cfir<CR>
