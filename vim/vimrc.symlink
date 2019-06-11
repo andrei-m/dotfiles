@@ -81,6 +81,8 @@ noremap <Leader>p :cp<CR>
 :noremap <Leader>sp :set paste<cr>
 :noremap <Leader>np :set nopaste<cr>
 
+:noremap <Leader>fl :%s/<C-V><C-M>/\r/g<cr>
+
 " omnicomplete
 inoremap <Leader>, <C-x><C-o>
 
