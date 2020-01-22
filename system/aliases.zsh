@@ -15,6 +15,7 @@ alias e="vim"
 # clypd alias
 alias mit="make integration-test"
 alias mcm="make -C .. integration-test-up && make check && make -C .. integration-test-run"
+alias mcmr="make -C .. integration-test-up && make check && make -C .. integration-test-run && make -C .. redshift-integration-test"
 
 alias fixaudio="sudo launchctl unload /System/Library/LaunchDaemons/com.apple.audio.coreaudiod.plist && sudo launchctl load /System/Library/LaunchDaemons/com.apple.audio.coreaudiod.plist"
 alias cl="cd $GOPATH/src/clypd"
