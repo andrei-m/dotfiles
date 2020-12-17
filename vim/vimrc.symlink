@@ -1,4 +1,4 @@
-" ----------------------------------------------------------------------------
+".----------------------------------------------------------------------
 "  runtimepath management
 " ----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
@@ -140,13 +140,10 @@ au BufWritePost *.go silent :GoTestCompile<CR>
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
 let g:go_fmt_command = "goimports"
-let g:go_def_mode = 'godef'
-let g:go_referrers_mode = 'guru'
+let g:go_gopls_settings = { 'directoryFilters': ['-vendor'] }
 
 " Auto-format Terraform files
 let g:terraform_fmt_on_save = 1
-" let g:go_guru_scope = ["clypd/...","-clypd/vendor/..."]
-" let g:go_referrers_mode = 'guru'
 
 " ----------------------------------------------------------------------------
 " Visual Cues
